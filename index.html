@@ -1,0 +1,43 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login</title>
+        <link rel="stylesheet" href="style/style.css">
+    </head>
+    <body>
+        <div class="login">
+            <div class="container">
+                <div class="login-container">
+                    <div class="login-box">
+                        <div class="logo-img">
+                            <img src="img/Logo.png" alt="logo_img">
+                        </div>
+                        <div class="input">
+                            <input type="text" class="input-text input-email"
+                                id="input-email"
+                                placeholder="Email Address" required>
+                            <input type="password"
+                                class="input-text input-password"
+                                id="input-password"
+                                placeholder="Password" required>
+                            <a href="#" class="forgot-password__link">Forgot
+                                password?</a>
+                            <button type="button"
+                                class="submit-btn" onclick="logIn_Cheak();">Sign
+                                in</button>
+                        </div>
+                    </div>
+                </div>
+                <div id="box-alert" class="box-alert">
+                    <span class="closebtn"
+                        onclick="this.parentElement.style.display='none';">&times</span>
+                    <p id="text-alert" class="alert-text"></p>
+                </div>
+            </div>
+        </div>
+        <script src="js/app.js">
+           
+        </script>
+    </body>
+</html>
